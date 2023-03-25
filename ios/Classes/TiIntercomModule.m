@@ -135,9 +135,9 @@
   [Intercom logout];
 }
 
-- (void)presentMessenger:(id)unused
+- (void)presentIntercom:(id)unused
 {
-  [Intercom presentMessenger];
+  [Intercom presentIntercom];
 }
 
 - (void)presentMessageComposer:(id)message
@@ -149,14 +149,14 @@
 
 - (void)presentHelpCenter:(id)unused
 {
-  [Intercom presentHelpCenter];
+    [Intercom presentIntercom:helpCenter];
 }
 
 - (void)presentCarousel:(id)carouselId
 {
   ENSURE_SINGLE_ARG_OR_NIL(carouselId, NSString);
-
-  [Intercom presentCarousel:carouselId];
+    
+    [IntercomContent articleWithId:carouselId];
 }
 
 // MARK: UIApplicationDelegate

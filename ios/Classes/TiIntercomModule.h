@@ -23,7 +23,7 @@
 
 - (void)logout:(id)unused;
 
-- (void)presentMessenger:(id)unused;
+- (void)presentIntercom:(id)unused;
 
 - (void)presentMessageComposer:(id)message;
 
