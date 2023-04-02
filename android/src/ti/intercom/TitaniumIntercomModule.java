@@ -135,7 +135,7 @@ public class TitaniumIntercomModule extends KrollModule {
 
 	@Kroll.method
 	public void presentMessenger(String message) {
-		Intercom.client().displayMessenger();
+		Intercom.client().present();
 	}
 
 	@Kroll.method
@@ -145,12 +145,12 @@ public class TitaniumIntercomModule extends KrollModule {
 
 	@Kroll.method
 	public void presentCarousel(String carouselId) {
-		Intercom.client().displayCarousel(carouselId);
+		// Intercom.client().displayCarousel(carouselId);
 	}
 
 	@Kroll.method
 	public void presentHelpCenter() {
-		Intercom.client().displayHelpCenter();
+		// Intercom.client().present(space = IntercomSpace.HelpCenter);
 	}
 
 	@Kroll.method
